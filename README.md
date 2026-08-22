@@ -1,79 +1,90 @@
 # Emotional AI Architecture
 
-**Multi-layer conversational AI system for context-aware, mood-responsive interactions**
+**Multi-layer conversational architecture for context-aware, mood-responsive interaction**
 
-Part of the [CCCS Framework](https://github.com/aadi-architect/aadi-architect) research ecosystem.
+Part of the [CCCS framework](https://github.com/aadi-architect/aadi-architect) research ecosystem.
+
+> **What this repository is:** an architecture specification — component breakdowns, formulas,
+> and integration notes. There is no runnable implementation here yet. It is labeled this way
+> on purpose so nobody clones it expecting a library.
 
 ## Overview
 
-Multi-layer conversational AI system implementing novel approaches to emotional state recognition and adaptive response generation. Features symbolic memory architecture, emotional feedback integration, and real-time mood adaptation.
+Design for a conversational system that tracks affective state across a session and adapts its
+responses to it, instead of re-deriving tone from scratch on every turn. Three CCCS layers live
+here: the Emotional Feedback Loop (L3), the Tone Engine Layer (L4), and the Self-Reference
+Engine (L6).
 
-## Core Components
+## Components
 
-### Emotional Feedback Loop (EFL)
-- Real-time affective state tracking
-- Emotional momentum modeling
-- Mood-responsive adaptation
+### Emotional Feedback Loop (EFL · CCCS L3)
 
-**Formula:** `E(t+1) = αE(t) + βF(t) + γP(t)`
+Bi-directional state adaptation over time — affect updates the model, and the model reshapes
+the exchange.
 
-### Symbolic Memory Architecture
-- Constraint geometry encoding
-- Associative recall mechanisms
-- Long-term emotional pattern storage
+**State update:** `E(t+1) = αE(t) + βF(t) + γP(t)`
 
-### Adaptive Response Generation
-- Context-aware persona rendering
-- Tonal coherence maintenance
-- Identity-consistent output
+| Term | Meaning |
+| --- | --- |
+| `E(t)` | Affective state at turn *t* |
+| `F(t)` | Feedback signal derived from the current turn |
+| `P(t)` | Persistent pattern contribution from long-term memory |
+| `α, β, γ` | Weights controlling momentum, responsiveness, and pattern pull |
 
-## Technical Architecture
+### Tone Engine Layer (TEL · CCCS L4)
 
-## Tech Stack
+Real-time mood and personality state simulation — dynamic states rather than a static
+personality prompt. Maintains tonal coherence when the topic shifts.
+
+### Self-Reference Engine (SRE · CCCS L6)
+
+Checks generated output against symbolic anchors before it is emitted, so persona identity does
+not silently drift over a long session.
+
+### Symbolic memory
+
+Constraint-geometry encoding, associative recall, and long-term storage of affective patterns —
+the substrate the three layers above read from and write to.
+
+## Intended stack
 
 - **Core:** Python, LangChain
-- **LLMs:** OpenAI GPT, Claude, Gemini APIs
-- **Voice:** ElevenLabs Voice API
+- **Models:** OpenAI GPT, Anthropic Claude, Google Gemini APIs
+- **Voice:** ElevenLabs
 - **Memory:** FAISS, ChromaDB
-- **Frameworks:** HuggingFace Transformers, FastAPI
+- **Serving:** FastAPI, HuggingFace Transformers
 
 ## Status
 
-🚧 **Active Research** — Prototype validated in real-world counseling context, production scaling in progress
+**Specification.** The architecture and its formulas are documented; implementation is in
+progress and not yet public.
 
-## Real-World Validation
+An earlier voice-layer prototype (April 2026) exercised constraint-geometry-encoded ElevenLabs
+integration and tonal coherence across context shifts. It was a single informal prototype run,
+not a study, and no measurements from it are reproducible from what was retained.
 
-**Voice-Layer Counseling Prototype (April 2026)**
-- Constraint-geometry-encoded ElevenLabs integration
-- Trauma-informed interaction patterns
-- Sub-5-minute emotional disclosure facilitation
-- Tonal coherence across context shifts
+## Evaluation
 
-## Integration
+Identity continuity is scored with **R-Score** — semantic drift, affective latency match, and
+symbolic anchor hit-rate. Definitions, weights, and design thresholds live in the
+[framework overview](https://github.com/aadi-architect/aadi-architect). Every threshold there is
+a *design target*, not a measured result.
 
-Core component of Project SIM alongside:
-- [Cognitive Pattern Tools](https://github.com/aadi-architect/cognitive-pattern-tools)
-- [Decision Simulation Framework](https://github.com/aadi-architect/decision-simulation-framework)
+## Related
 
-## Research Context
+- [cognitive-pattern-tools](https://github.com/aadi-architect/cognitive-pattern-tools) — SAG and OMP
+- [decision-simulation-framework](https://github.com/aadi-architect/decision-simulation-framework) — SIM Core
 
-Implements the **Emotional Feedback Loop**, **Tone Engine Layer**, and **Self-Reference Engine** components of the CCCS 7-layer architecture, enabling:
-- Continuous affective state integration
-- Identity-consistent emotional responses
-- Long-term relational memory
+## Intended applications
 
-## Use Cases
-
-- AI companions & personalized assistants
-- Mental-health decision-support systems
-- Adaptive learning emotional scaffolding
-- Voice-based counseling prototypes
+AI companions and personalized assistants, long-term agent memory, adaptive learning
+scaffolding, and voice agents that hold tone across a session.
 
 ## Contact
 
-Adarsh Kumar (Aadi)  
-📧 adarshkr26@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/adarshkumar-ai-research)
+**Aadi Adarsh** (Adarsh Kumar) · [aadiadarsh.dev](https://aadiadarsh.dev)
+[adarshkr26@gmail.com](mailto:adarshkr26@gmail.com) ·
+[LinkedIn](https://linkedin.com/in/adarshkumar-ai-research)
 
 ---
 
