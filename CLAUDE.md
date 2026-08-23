@@ -64,8 +64,10 @@ ESM · SAG · EFL · TEL · OMP · SRE · FDE
 (Emotional Seed Memory, Symbolic Anchor Grid, Emotional Feedback Loop, Tone Engine Layer,
 Observer Mirror Protocol, Self-Reference Engine, Feedback-Driven Evolution)
 
-"Memory Loop Simulator" (MLS) appears in superseded drafts as an alternative for L3. It is not
-canonical — use EFL.
+L3 appears as both EFL (Emotional Feedback Loop) and MLS (Memory Loop Simulator). The split
+is by document class, not by date: MLS in research and theory documents, EFL in professional
+and public-facing ones. This repository is public-facing, so use EFL here. Do not rewrite MLS
+where it appears in research documents — it is correct there.
 
 Internal research notes use a longer, function-named decomposition. That is deliberate, not a
 contradiction, and it does not belong in public-facing material.
