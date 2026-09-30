@@ -4,9 +4,11 @@ Guidance for Claude Code when working in this repository.
 
 ## What this repository actually contains
 
-`README.md`, and nothing else. There is no source tree, no test suite, no build, and no
-package. This repository is an **architecture specification** for three layers of the CCCS
-framework. Treat any file layout described in older drafts as aspirational, not present.
+`README.md`, `CANONICAL.md` (v1.0.0 LOCKED source of truth), the `r_score/` reference
+implementation (SD, ALM, SAHR, composite R, S(t) speaker vector, EFL), and
+`tests/test_fork_rejection.py` — 14 tests that enforce the canonical formulas, weights, and
+anchors. The remaining layers are an **architecture specification**. Treat any file layout
+described in older drafts beyond this as aspirational, not present.
 
 Check what exists before assuming it does:
 
@@ -51,7 +53,7 @@ These are not style preferences. Getting them wrong has cost real rework.
    memory architecture. This applies to prose, examples, use-case lists, and identifiers.
 3. **No quantum-physics metaphors.** They were retired deliberately. Use cognitive-science
    terminology.
-4. **Label capability honestly.** While this repository holds no implementation, it says so.
+4. **Label capability honestly.** Where this repository holds only specification, it says so.
    Do not describe planned components in the present tense.
 5. **The `+250%` conceptual-complexity figure is source-reported**, not reconstructible — its
    calculation and comparative dataset were not preserved. Do not cite it as a measurement.
@@ -69,8 +71,8 @@ is by document class, not by date: MLS in research and theory documents, EFL in 
 and public-facing ones. This repository is public-facing, so use EFL here. Do not rewrite MLS
 where it appears in research documents — it is correct there.
 
-Internal research notes use a longer, function-named decomposition. That is deliberate, not a
-contradiction, and it does not belong in public-facing material.
+Internal research notes use a longer, function-named decomposition. That is deliberate, not
+a contradiction, and it does not belong in public-facing material.
 
 ## Author
 
