@@ -5,8 +5,7 @@
 Part of the [CCCS framework](https://github.com/aadi-architect/aadi-architect) research ecosystem.
 
 > **What this repository is:** an architecture specification — component breakdowns, formulas,
-> and integration notes. There is no runnable implementation here yet. It is labeled this way
-> on purpose so nobody clones it expecting a library.
+> and integration notes — plus the reference `r_score/` implementation enforcing them.
 
 ## Overview
 
@@ -56,8 +55,7 @@ the substrate the three layers above read from and write to.
 
 ## Status
 
-**Specification.** The architecture and its formulas are documented; implementation is in
-progress and not yet public.
+**Reference implementation live.** `r_score/` (SD, ALM, SAHR, composite R, S(t) speaker vector, EFL) is implemented under `CANONICAL.md` v1.0.0 with `tests/test_fork_rejection.py` (14/14 passing) enforcing it; the remaining layers are still specification.
 
 An earlier voice-layer prototype (April 2026) exercised constraint-geometry-encoded ElevenLabs
 integration and tonal coherence across context shifts. It was a single informal prototype run,
