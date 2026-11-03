@@ -8,7 +8,7 @@ Companion code for "CCCS-R Score: A Quantitative Framework for Identity Persiste
 - `tests/test_fork_rejection.py` — 14/14 passing
 - `CANONICAL.md` — output v1.0.0 LOCKED
 
-## Verified results (Sept 2026)
+## Observed results (N=1)
 
 - R-Score = **0.938** (N=1 signal, not validation)
 - Weights: 0.4 / 0.3 / 0.3 (locked)
