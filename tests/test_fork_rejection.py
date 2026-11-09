@@ -120,7 +120,7 @@ def test_speaker_vector_shape():
     speaker = _try_import("r_score.speaker", "encode_speaker")
     if speaker is not None:
         s1 = speaker("hey its me AADI")
-        s2 = speaker("Gaurav was here")
+        s2 = speaker("Participant G was here")
         assert s1.shape == (480,), f"S(t) must be 480-dim, got {s1.shape}"
         assert s2.shape == (480,)
         assert not np.array_equal(s1, s2), "distinct utterances must yield distinct vectors"
