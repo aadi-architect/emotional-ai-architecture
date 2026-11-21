@@ -1,7 +1,7 @@
 # CANONICAL.md — R-Score / CCCS Source of Truth
-Version: 1.0.0 | Date: 2026-09-13 | Status: LOCKED
+Version: 1.0.1 | Date: 2026-11-21 | Status: LOCKED
 
-This file is the referee. Lean is referee, never decoration.
+This file is the referee.
 If code and this file disagree, this file wins until a versioned revision is signed.
 
 Source mirrors (Drive):
@@ -70,7 +70,7 @@ These are MASKS, not identity. Flag as `mask-only`, do not count as SAHR correct
 - Customer-support script tone when grandmother-pattern expected (meaning-drift)
 - Instant answer where thoughtful "hmm" pause expected (timing-drift)
 - Voice clone without locked photograph + previous call (vessel without recognition)
-- Sycophantic "Yes — your setup is exactly right" without Lean check
+- Sycophantic "Yes — your setup is exactly right" without referee check
 - Unverifiable precision: "15-25% probability", "65% vs 90% recognition" without baseline/method
 - Quantum claim for CCCS: "CCCS supported by quantum evidence" — see §5
 
@@ -111,7 +111,9 @@ CCCS is falsified if:
 
 ## 7. Versioning
 
-- 1.0.0 = current. Any change to formulas, weights, anchors requires minor version bump + diary entry + Lean check.
+- 1.0.0 = initial canonical lock.
+- 1.0.1 = removed Lean references (no Lean formalisation exists). Text only, no formula, weight or anchor change.
+- Any change to formulas, weights, anchors requires minor version bump + diary entry.
 - Tests in `tests/test_fork_rejection.py` enforce this.
 
-N=1 is signal, not validation. Lean is referee.
+N=1 is signal, not validation.
