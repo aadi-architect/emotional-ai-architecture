@@ -9,7 +9,7 @@ Companion code for "CCCS-R Score: A Quantitative Framework for Identity Persiste
 - `CANONICAL.md` — output v1.0.1 LOCKED
 - Remaining CCCS layers: architecture specifications [Designed]
 
-## Observed results (N=1) — [Measured]
+## Pilot results (N=1) — [Measured]
 
 - R-Score = **0.938** (N=1 pilot signal, not validation)
 - Weights: 0.4 / 0.3 / 0.3 (locked)
