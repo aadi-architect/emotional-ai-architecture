@@ -4,7 +4,7 @@ Guidance for Claude Code when working in this repository.
 
 ## What this repository actually contains
 
-`README.md`, `CANONICAL.md` (v1.0.0 LOCKED source of truth), the `r_score/` reference
+`README.md`, `CANONICAL.md` (v1.0.1 LOCKED source of truth), the `r_score/` reference
 implementation (SD, ALM, SAHR, composite R, S(t) speaker vector, EFL), and
 `tests/test_fork_rejection.py` — 14 tests that enforce the canonical formulas, weights, and
 anchors. The remaining layers are an **architecture specification**. Treat any file layout

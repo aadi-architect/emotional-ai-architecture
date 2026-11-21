@@ -24,4 +24,4 @@
 | 13 | `test_efl_hard_reset_at_sigma_0` | PASSED |
 | 14 | `test_speaker_ema_half_life` | PASSED |
 
-Suite: `tests/test_fork_rejection.py` — enforces CANONICAL.md v1.0.0 (locked weights 0.4/0.3/0.3, locked anchors, formula signatures).
+Suite: `tests/test_fork_rejection.py` — enforces CANONICAL.md v1.0.1 (locked weights 0.4/0.3/0.3, locked anchors, formula signatures).
